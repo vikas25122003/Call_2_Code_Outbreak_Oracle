@@ -1,0 +1,167 @@
+.risk-panel {
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  margin: 1rem 0;
+  overflow: hidden;
+}
+
+.risk-header {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+  padding: 1.5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.risk-header h2 {
+  margin: 0;
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+
+.risk-level {
+  padding: 0.75rem 1.5rem;
+  border-radius: 8px;
+  font-weight: 700;
+  font-size: 1.1rem;
+  text-align: center;
+  min-width: 150px;
+}
+
+.risk-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 1rem;
+  padding: 1.5rem;
+}
+
+.risk-card {
+  background: #f8f9fa;
+  border-radius: 8px;
+  padding: 1.5rem;
+  border-left: 4px solid #667eea;
+}
+
+.risk-card h3 {
+  margin: 0 0 1rem 0;
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: #333;
+}
+
+.weather-data,
+.disease-data {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.weather-item,
+.disease-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.5rem 0;
+  border-bottom: 1px solid #e9ecef;
+}
+
+.weather-item:last-child,
+.disease-item:last-child {
+  border-bottom: none;
+}
+
+.label {
+  font-weight: 500;
+  color: #666;
+}
+
+.value {
+  font-weight: 600;
+  color: #333;
+}
+
+.aqi-value {
+  font-weight: 700;
+}
+
+.risk-factors {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.factor {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  padding: 0.75rem;
+  background: white;
+  border-radius: 6px;
+  border: 1px solid #e9ecef;
+}
+
+.factor-icon {
+  font-size: 1.2rem;
+  width: 24px;
+  text-align: center;
+}
+
+.factor-text {
+  flex: 1;
+  font-weight: 500;
+  color: #333;
+}
+
+.factor-score {
+  font-weight: 600;
+  padding: 0.25rem 0.75rem;
+  border-radius: 4px;
+  font-size: 0.9rem;
+  background: #e9ecef;
+  color: #495057;
+}
+
+.factor-score:contains('High'),
+.factor-score:contains('Poor') {
+  background: #f8d7da;
+  color: #721c24;
+}
+
+.factor-score:contains('Normal'),
+.factor-score:contains('Good') {
+  background: #d4edda;
+  color: #155724;
+}
+
+@media (max-width: 768px) {
+  .risk-header {
+    flex-direction: column;
+    text-align: center;
+  }
+  
+  .risk-grid {
+    grid-template-columns: 1fr;
+    padding: 1rem;
+  }
+  
+  .risk-card {
+    padding: 1rem;
+  }
+  
+  .weather-item,
+  .disease-item {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.25rem;
+  }
+  
+  .factor {
+    flex-direction: column;
+    text-align: center;
+    gap: 0.5rem;
+  }
+} 
