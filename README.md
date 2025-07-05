@@ -190,3 +190,14 @@ npm run build
 
 The built files will be in the `dist/` directory, ready for deployment to any static hosting service.
 
+![image](https://github.com/user-attachments/assets/61a21eb1-f360-45b2-9c62-46c0110c94a6)
+![image](https://github.com/user-attachments/assets/41e922e2-4d8f-407e-a335-4f26dbc6e673)
+![image](https://github.com/user-attachments/assets/394cf340-7b59-4487-ac0e-f0e00c30cec0)
+![image](https://github.com/user-attachments/assets/c170a8a2-7c11-452e-b0b5-18e399c751d1)
+![image](https://github.com/user-attachments/assets/1dfb1250-2c50-448c-b420-7ea1168c527d)
+
+
+
+
+
+
